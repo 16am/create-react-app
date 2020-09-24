@@ -366,9 +366,11 @@ module.exports = function (
 
   // Change displayed command to yarn instead of yarnpkg
   const displayedCommand = useYarn ? 'yarn' : 'npm';
-
+  
   console.log();
   console.log(`Success! Created ${appName} at ${appPath}`);
+  console.log('https://ilivetech.it/');
+  console.log();
   console.log('Inside that directory, you can run several commands:');
   console.log();
   console.log(chalk.cyan(`  ${displayedCommand} start`));
@@ -406,6 +408,8 @@ module.exports = function (
   }
   console.log();
   console.log('Happy hacking!');
+
+  console.log(chalk.red('VERY IMPORTANT:'));
 };
 
 function isReactInstalled(appPackage) {
